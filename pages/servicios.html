@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>Servicios</title>
+</head>
+
+<body>
+    <header>
+        <nav aria-label="Navegacion principal">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="soporte.html">Soporte</a></li>
+            </ul>
+        </nav>
+        <div>Candiota Reparaciones</div>
+    </header>
+
+    <main>
+        <!-- Titulo Principal -->
+        <section class="fondogris">
+            <div class="encabezado">
+                <h1>SERVICIOS</h1> <!-- Titulo -->
+                <h2>Tu taller de confianza</h2>        
+                <form action="email.php" method="POST"> <!-- Agendar -->
+                    <div>
+                    <label for="email-agenda-1">AGENDATE AHORA</label>
+                    </div>
+                    <div class="agendar">
+                        <input type="email" id="email-agenda-1" name="email-agenda" required>
+                        <button type="submit">AVANZAR</button>
+                    </div>
+                </form>
+            </div>
+            <img class="imagentitulo" src="../assets/images/cocheportada.jpg" alt="Coche en el taller, servicio destacado"> <!-- Imagen de la Izquierda -->
+        </section>
+    
+
+        <!-- Seccion de Servicios -->
+        <section class="servicios">
+            <div>
+                <img src="../assets/images/casa.png" alt="Icono de casa"> 
+                <h3>SERVICIOS</h3>
+                <p class="subrayado">Diagnóstico y reparación de motores, suspensión, frenos, embragues y transmisiones. Nos ocupamos de todo tipo de
+                vehículos, siempre con materiales de calidad y garantía de trabajo.</p>
+            </div>
+        </section>
+
+        <!-- Seccion de Testimonios -->
+        <section class="testimonios">
+            <!-- Testimonio 1 -->
+            <div>
+                <img src="../assets/icons/comillas.webp" alt=""> <!-- Comillas -->
+                <blockquote>"Excelente servicio, mi auto quedó como nuevo."</blockquote>
+                <cite>Lucia Gonzalez</cite>
+            </div>
+
+            <!-- Testimonio 2 -->
+            <div>
+                <img src="../assets/icons/comillas.webp" alt=""> <!-- Comillas -->
+                <blockquote>"Trabajo impecable, precio justo siempre."</blockquote>
+                <cite>Martin Pereira</cite>
+            </div>
+        </section>
+
+
+        <!-- Agenda -->
+        <section class="agendar">
+            <h2>Deja tu auto en manos expertas!</h2>
+            <div class="agendar-form">
+                <p>Agenda hora ingresando tu Email</p>
+                <form action="email.php" method="POST"> <!-- Agendar -->
+                    <div>
+                    <label for="email-agenda-2">AGENDATE AHORA</label>
+                    </div>
+                    <div class="agendar">
+                        <input type="email" id="email-agenda-2" name="email-agenda" required>
+                        <button type="submit">AVANZAR</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Candiota <span class="negrita">Reparaciones</span></p>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="soporte.html">Soporte</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>

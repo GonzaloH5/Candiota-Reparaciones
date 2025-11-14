@@ -1,0 +1,438 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+footer {
+    background-color: #e8eef1;
+    padding: 2rem 0;
+}
+
+/* Fuente de letra */
+body {
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+.titulo-card {
+    background-color: #e8eef1;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem 1rem;
+}
+
+.titulo {
+    margin: 0.5rem 40px;
+    padding: 2rem 0.5rem;
+}
+
+h2.titulo {
+    padding: 0 0.5rem 4rem;
+}
+
+.negrita {
+    font-weight: 700;
+}
+
+.pregunta {
+    font-weight: 700;
+    margin-bottom: .25rem;
+}
+
+.subrayado {
+    border-bottom: 3px solid #e8eef1;
+    padding-bottom: 2rem;
+}
+
+
+/* ----------------------------- */
+/* Fondo y encabezados */
+/* ----------------------------- */
+
+.fondogris {
+    background-color: #e8eef1;
+}
+
+.fondoclaro {
+    background-color: #e8eef1;
+}
+
+.fondogris--border {
+    border: 2px solid #e8eef1;
+    border-radius: 6px;
+    background-color: #e8eef1;
+}
+
+.encabezado {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    padding: 1rem 2rem 7rem;
+    background-color: #e8eef1;
+    font-size: 2rem;
+}
+
+.encabezado p {
+    max-width: 500px;
+    height: auto;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 0 2rem;
+}
+
+/* ----------------------------- */
+/* Email */
+/* ----------------------------- */
+
+button {
+    margin-top: 0.5rem;
+    padding: .5rem 1rem;
+    background-color: #cc815e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#nombre,
+#email,
+#email-agenda,
+#problema {
+    padding: .5rem 1rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+
+/* ----------------------------- */
+/* Servicios */
+/* ----------------------------- */
+.servicios {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.servicios img {
+    width: 3.5rem;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.servicios h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.servicios p {
+    font-size: 1.2rem;
+    margin: 0 2rem 2rem 2rem;
+}
+
+.imagentitulo {
+    width: 30%;
+    max-width: 420px;
+    height: auto;
+    margin: 1rem;
+    margin-left: 5rem;
+}
+
+.servicios-grid {
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.tarjetaservicios {
+    padding: 1rem;
+    border-radius: 5px;
+    width: 20rem;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.tarjetaservicios img {
+    cursor: pointer;
+}
+
+.servicios-grid img {
+    width: 20rem;
+    height: auto;
+    margin-bottom: 1rem;
+    border: 2px solid #333;
+}
+
+.serviciosfooter {
+    text-align: center;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    gap: 1rem;
+    background-color: #edf8fd;
+}
+
+.sobrenosotros {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+
+/* ----------------------------- */
+/* Beneficios */
+/* ----------------------------- */
+.beneficios-grid {
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.beneficios-grid img {
+    width: 6rem;
+    height: auto;
+    margin: 0 auto 1rem;
+    display: block;
+}
+
+.beneficios {
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.beneficio {
+    padding: 1rem;
+    border-radius: 5px;
+    width: 300px;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+/* ----------------------------- */
+/* Galeria */
+/* ----------------------------- */
+.galeria {
+    text-align: center;
+}
+
+.galeria h1 {
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+    font-size: 4rem;
+}
+
+.imagenesgaleria img {
+    width: 16rem;
+    height: 16rem;
+    margin: 1rem;
+}
+
+.galeria video {
+    width: 99%;
+    height: auto;
+}
+
+
+/* ----------------------------- */
+/* Testimonios */
+/* ----------------------------- */
+.testimonios {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.testimonio {
+    margin: 2rem;
+    text-align: center;
+    width: auto;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.mathias-suarez img {
+    width: 140px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.mathias-suarez p {
+    margin-top: 10px;
+}
+
+.imgtestimonio img {
+    width: 40%;
+    height: auto;
+    margin: 2rem;
+}
+
+.imgtestimonio blockquote {
+    font-style: italic;
+    background-color: #ccc;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+/* ----------------------------- */
+/* FAQ */
+/* ----------------------------- */
+.faqs {
+    text-align: center;
+    margin: 8rem;
+    margin-bottom: 5rem;
+}
+
+.tarjeta {
+    background-color: #ccc;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    border: 3px solid #e8e3e3;
+}
+
+
+/* ----------------------------- */
+/* Formulario */
+/* ----------------------------- */
+.agendar h2 {
+    text-align: left;
+}
+
+.agendarhora img {
+    max-width: 650px;
+    height: 15%;
+    width: auto;
+    margin: 1rem;
+    margin-left: 1rem;
+}
+
+.agendarhora p {
+    text-align: center;
+    margin: 1rem;
+}
+
+.imgreseña {
+    background-color: #e8eef1;
+    padding: 1rem;
+}
+
+.imgreseña img {
+    width: 9em;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+/* ----------------------------- */
+/* Sobre Nosotros */
+/* ----------------------------- */
+
+.resumennosotros {
+    background-color: #a2adc7;
+}
+
+.resumennosotros img {
+    border-radius: 10px;
+    border: 5px outset #968ec0;
+    width: 500px;
+    height: auto;
+}
+
+.tarjetanosotros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+    /* ✅ centra el contenedor en la página */
+}
+
+
+.tarjetanosotros .texto {
+    width: 300px;
+    height: auto;
+    color: #333;
+    text-align: left;
+}
+
+.tarjetanosotros h3 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.tarjetanosotros p {
+    width: 600px;
+    height: auto;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.tarjetanosotros2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+    /* ✅ centra el contenedor en la página */
+}
+
+.tarjetanosotros2 .texto {
+    width: 300px;
+    height: auto;
+    color: #333;
+    text-align: left;
+}
+
+.tarjetanosotros2 h3 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.tarjetanosotros2 p {
+    width: 600px;
+    height: auto;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.navbar .navbar-nav {
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+    .navbar .navbar-nav {
+        justify-content: center;
+        width: 100%;
+        display: flex;
+    }
+}
