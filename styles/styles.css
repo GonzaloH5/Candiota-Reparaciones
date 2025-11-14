@@ -11,6 +11,11 @@ img {
     display: block;
 }
 
+/* LINEA SEPARADORA*/
+.line {
+    border: 4px dashed #e3f0f6;
+}
+
 footer {
     background-color: #e8eef1;
     padding: 2rem 0;
@@ -24,27 +29,48 @@ body {
 
 }
 
-.titulo-card {
-    background-color: #e8eef1;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    gap: 4rem 1rem;
-}
-
-.titulo {
-    margin: 0.5rem 40px;
-    padding: 2rem 0.5rem;
-}
-
-h2.titulo {
-    padding: 0 0.5rem 4rem;
-}
-
 .negrita {
     font-weight: 700;
 }
 
+/* -------------------------- */
+/* GRID DE INICIO */
+/* -------------------------- */
+
+.page-grid {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.sections-grid {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 0;
+    height: 100%;
+}
+
+/* -------------------------- */
+/* TITULO PRINCIPAL DEL INDEX */
+/* -------------------------- */
+
+.tituloprincipal {
+    background-color: #e8eef1;
+    align-content: center;
+    padding: 0 3.5rem;
+}
+
+.tituloprincipal h1 {
+    margin-bottom: 6rem;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.tituloprincipal h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/* --------------------------------------------- */
 .pregunta {
     font-weight: 700;
     margin-bottom: .25rem;
@@ -53,25 +79,6 @@ h2.titulo {
 .subrayado {
     border-bottom: 3px solid #e8eef1;
     padding-bottom: 2rem;
-}
-
-
-/* ----------------------------- */
-/* Fondo y encabezados */
-/* ----------------------------- */
-
-.fondogris {
-    background-color: #e8eef1;
-}
-
-.fondoclaro {
-    background-color: #e8eef1;
-}
-
-.fondogris--border {
-    border: 2px solid #e8eef1;
-    border-radius: 6px;
-    background-color: #e8eef1;
 }
 
 .encabezado {
@@ -92,31 +99,6 @@ h2.titulo {
     line-height: 1.5;
     margin: 0 2rem;
 }
-
-/* ----------------------------- */
-/* Email */
-/* ----------------------------- */
-
-button {
-    margin-top: 0.5rem;
-    padding: .5rem 1rem;
-    background-color: #cc815e;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#nombre,
-#email,
-#email-agenda,
-#problema {
-    padding: .5rem 1rem;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 0.5rem;
-}
-
 
 /* ----------------------------- */
 /* Servicios */
@@ -150,34 +132,35 @@ button {
     margin-left: 5rem;
 }
 
-.servicios-grid {
-    margin: 1rem 0;
+/* ------------------ */
+/* SERVICIOS INICIO */
+/* ------------------ */
+
+.servicios-line {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 4rem;
-    align-items: flex-start;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .tarjetaservicios {
-    padding: 1rem;
-    border-radius: 5px;
-    width: 20rem;
-    height: auto;
+    justify-items: center;
+    align-content: center;
+    padding: 2rem;
+    max-width: 400px;
     text-align: center;
-    justify-content: center;
 }
+
 
 .tarjetaservicios img {
-    cursor: pointer;
-}
-
-.servicios-grid img {
-    width: 20rem;
+    width: 300px;
     height: auto;
     margin-bottom: 1rem;
-    border: 2px solid #333;
+    box-shadow: #deefff 0px 4px 8px 0px;
+    border-radius: 10px;
 }
+
+/* ----------------------------- */
 
 .serviciosfooter {
     text-align: center;
@@ -200,34 +183,33 @@ button {
 /* ----------------------------- */
 /* Beneficios */
 /* ----------------------------- */
-.beneficios-grid {
-    margin: 1rem 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6rem;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-.beneficios-grid img {
-    width: 6rem;
-    height: auto;
-    margin: 0 auto 1rem;
-    display: block;
-}
 
 .beneficios {
-    gap: 1rem;
-    padding: 2rem;
+    background-color: #f9fafd;
+}
+
+.beneficios h2 {
+    text-align: center;
+    margin: 3rem 0;
+    font-size: 3rem;
+}
+
+.beneficios-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .beneficio {
     padding: 1rem;
-    border-radius: 5px;
-    width: 300px;
-    height: auto;
     text-align: center;
-    justify-content: center;
+    width: 300px;
+}
+
+.beneficio img {
+    width: 9rem;
+    height: auto;
+    margin: 0 auto 1rem;
 }
 
 
@@ -260,44 +242,31 @@ button {
 /* ----------------------------- */
 /* Testimonios */
 /* ----------------------------- */
-.testimonios {
-    text-align: center;
-    margin: 2rem 0;
-}
-
 .testimonio {
-    margin: 2rem;
     text-align: center;
-    width: auto;
-    height: 350px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.mathias-suarez img {
-    width: 140px;
-    height: auto;
-    border-radius: 50%;
-}
-
-.mathias-suarez p {
-    margin-top: 10px;
-}
-
-.imgtestimonio img {
-    width: 40%;
-    height: auto;
-    margin: 2rem;
-}
-
-.imgtestimonio blockquote {
+    justify-items: center;
+    align-content: center;
+    background-color: #e8eef1;
     font-style: italic;
-    background-color: #ccc;
-    padding: 1rem;
-    border-radius: 5px;
+    padding: 5rem 0;
+}
+
+.testimonio-figure h5 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-style: normal;
+}
+
+.testimonio img {
+    width: 11rem;
+    height: auto;
+    margin: 0 auto 1rem;
+}
+
+img.estrella {
+    width: 9rem;
+    height: auto;
+    margin: 0 auto 1rem;
 }
 
 /* ----------------------------- */
@@ -425,14 +394,15 @@ button {
     line-height: 1.5;
 }
 
-.navbar .navbar-nav {
-    text-align: center;
-}
+/* RESPONSIVE */
 
-@media (min-width: 992px) {
-    .navbar .navbar-nav {
-        justify-content: center;
-        width: 100%;
-        display: flex;
+/* Mobile: filas 1,3,4 solo su alto de contenido (auto), 2 y 5 pueden crecer */
+@media (max-width: 600px) {
+    .sections-grid {
+        grid-template-rows: auto minmax(0, 1fr) auto auto minmax(0, 1fr);
+    }
+
+    .sections-grid>* {
+        min-height: 0;
     }
 }

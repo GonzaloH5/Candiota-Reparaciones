@@ -10,17 +10,17 @@
     <title>Inicio</title>
 </head>
 
-<body>
+<body class="page-grid">
     <header>
-        <nav class="navbar navbar-expand-lg" style="background:#edf1f2;">
-            <div class="container d-flex flex-column align-items-center">
+        <nav class="navbar navbar-expand-lg ps-5 line" style="background:#eff2f4;">
+            <div class="container-fluid">
                 <a class="navbar-brand" href="#">Candiota Reparaciones</a>
-                <button class="navbar-toggler mb-2" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-center w-100" id="navbarNavAltMarkup">
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav gap-4">
                         <a class="nav-link active" href="#">Inicio</a>
                         <a class="nav-link" href="#">Sobre</a>
@@ -33,15 +33,16 @@
         </nav>
     </header>
 
-    <main>
+    <main class="sections-grid ">
         <!-- Titulo Principal -->
-        <div class="titulo-card">
-            <h1 class="titulo">Tu auto en las <span class="negrita">mejores</span> manos.</h1>
-            <h2 class="titulo">desde mantenimiento rutinario hasta reparaciones completas, te cubrimos.</h2>
+        <div class="tituloprincipal">
+            <h1>Tu auto en las <span class="negrita">mejores</span> manos.</h1>
+            <h2>desde mantenimiento rutinario hasta reparaciones completas, te cubrimos.</h2>
         </div>
+
         <!-- Seccion de Beneficios -->
-        <section class="beneficios">
-            <h2 class="beneficiostitulo">Beneficios</h2>
+        <section class="beneficios line">
+            <h2>BENEFICIOS</h2>
             <div class="beneficios-grid">
                 <article class="beneficio">
                     <img src="assets/icons/mecanico.png" alt="Mecánico">
@@ -64,22 +65,22 @@
         </section>
 
         <!-- Seccion de Testimonio -->
-        <section class="fondogris--border">
-            <div class="testimonio">
-                <figure class="mathias-suarez">
-                    <img class="avatar" src="assets/images/mathias-Suarez.png" alt="Foto de Mathias Suárez">
-                    <figcaption>
-                        <img class="estrellas" src="assets/icons/5-estrellas.webp" alt="">
-                        <cite>Mathias Suárez</cite>
-                        <p class="location">Montevideo</p>
-                    </figcaption>
-                </figure>
-                <blockquote>"Servicio profesional y confiable, lo recomiendo totalmente."</blockquote>
-            </div>
+        <section class="testimonio">
+            <figure class="testimonio-figure">
+                <figcaption>
+                    <img src="assets/images/mathias-Suarez.png" alt="Foto de Mathias Suárez">
+                    <img class="estrella" src="assets/icons/5-estrellas.webp" alt="Calificación: 5 estrellas">
+                    <h5>Mathias Suárez</h5>
+                    <span>Montevideo</span>
+                </figcaption>
+                <blockquote>
+                    <p>"Servicio profesional y confiable, lo recomiendo totalmente."</p>
+                </blockquote>
+            </figure>
         </section>
 
         <!-- Seccion tipo de Servicios-->
-        <section class="servicios-grid">
+        <section class="servicios-line line">
             <div class="tarjetaservicios">
                 <img src="assets/images/reparaciones.jpg" alt="Reparaciones automotrices">
                 <h3>Reparaciones</h3>
