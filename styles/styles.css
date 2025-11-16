@@ -185,9 +185,43 @@ body {
 }
 
 
-/* ---------------------- */
+/* ---------------------------- */
 /* Fin del Menu Inicial */
-/* ---------------------- */
+/* ---------------------------- */
+/* INICIO DE SOBRE NOSOTROS */
+/* ---------------------------- */
+
+.titulo-sobre-nosotros-box {
+    background-color: #e8eef1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 2rem;
+}
+
+.titulo-sobre-nosotros {
+    text-align: center;
+}
+
+.titulo-sobre-nosotros h1 {
+    font-size: 4rem;
+    margin: 2rem;
+}
+
+.titulo-sobre-nosotros h2 {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.titulo-sobre-nosotros p {
+    font-size: 1.5rem;
+    max-width: 900px;
+    margin: 2rem;
+    line-height: 1.5;
+    text-align: center;
+    padding: 0 1rem;
+}
 
 /* ----------------------------- */
 /* Galeria */
