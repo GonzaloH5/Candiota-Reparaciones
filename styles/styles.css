@@ -11,6 +11,17 @@ img {
     display: block;
 }
 
+ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* LINEA SEPARADORA*/
 .line {
     border: 4px dashed #e3f0f6;
@@ -18,7 +29,8 @@ img {
 
 footer {
     background-color: #e8eef1;
-    padding: 2rem 0;
+    padding: 2rem;
+    display: flex;
 }
 
 /* Fuente de letra */
@@ -34,23 +46,31 @@ body {
 }
 
 /* -------------------------- */
-/* GRID DE INICIO */
+/* GRID */
 /* -------------------------- */
 
-.page-grid {
+.page-grid-inicio {
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
 
-.sections-grid {
+.sections-grid-inicio {
     display: grid;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 600px);
+    gap: 0;
+    height: 100%;
+}
+
+.sections-grid-sobre {
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
     gap: 0;
     height: 100%;
 }
 
 /* -------------------------- */
-/* TITULO PRINCIPAL DEL INDEX */
+/* MENU INICIO */
+/* TITULO PRINCIPAL DEL MENU */
 /* -------------------------- */
 
 .tituloprincipal {
@@ -70,66 +90,37 @@ body {
     font-weight: 400;
 }
 
-/* --------------------------------------------- */
-.pregunta {
-    font-weight: 700;
-    margin-bottom: .25rem;
+/* ----------------------------- */
+/* Beneficios */
+/* ----------------------------- */
+
+.beneficios {
+    background-color: #f9fafd;
+    align-content: center;
 }
 
-.subrayado {
-    border-bottom: 3px solid #e8eef1;
-    padding-bottom: 2rem;
-}
-
-.encabezado {
+.beneficios h2 {
     text-align: center;
+    margin: 3rem 0;
+    font-size: 3rem;
+}
+
+.beneficios-grid {
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center;
-    padding: 1rem 2rem 7rem;
-    background-color: #e8eef1;
-    font-size: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.encabezado p {
-    max-width: 500px;
-    height: auto;
-    font-size: 1.2rem;
-    line-height: 1.5;
-    margin: 0 2rem;
-}
-
-/* ----------------------------- */
-/* Servicios */
-/* ----------------------------- */
-.servicios {
+.beneficio {
+    padding: 1rem;
     text-align: center;
-    margin: 2rem 0;
+    width: 300px;
 }
 
-.servicios img {
-    width: 3.5rem;
+.beneficio img {
+    width: 9rem;
     height: auto;
-    margin-bottom: 1rem;
-}
-
-.servicios h3 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.servicios p {
-    font-size: 1.2rem;
-    margin: 0 2rem 2rem 2rem;
-}
-
-.imagentitulo {
-    width: 30%;
-    max-width: 420px;
-    height: auto;
-    margin: 1rem;
-    margin-left: 5rem;
+    margin: 0 auto 1rem;
 }
 
 /* ------------------ */
@@ -161,58 +152,42 @@ body {
 }
 
 /* ----------------------------- */
+/* Enviar a servicios */
+/* ----------------------------- */
 
 .serviciosfooter {
-    text-align: center;
-    height: 350px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    font-size: 2rem;
-    gap: 1rem;
     background-color: #edf8fd;
-}
-
-.sobrenosotros {
+    align-content: center;
+    justify-content: center;
     text-align: center;
-    margin: 2rem 0;
+}
+
+.serviciosfooter h2 {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+
+}
+
+.serviciosfooter p {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.serviciosfooter a {
+    font-size: 1.5rem;
+    font-style: italic;
+    max-width: 500px;
+}
+
+.serviciosfooter a:hover {
+    font-size: 1.6rem;
 }
 
 
-/* ----------------------------- */
-/* Beneficios */
-/* ----------------------------- */
-
-.beneficios {
-    background-color: #f9fafd;
-}
-
-.beneficios h2 {
-    text-align: center;
-    margin: 3rem 0;
-    font-size: 3rem;
-}
-
-.beneficios-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.beneficio {
-    padding: 1rem;
-    text-align: center;
-    width: 300px;
-}
-
-.beneficio img {
-    width: 9rem;
-    height: auto;
-    margin: 0 auto 1rem;
-}
-
-
+/* ---------------------- */
+/* Fin del Menu Inicial */
+/* ---------------------- */
 
 /* ----------------------------- */
 /* Galeria */
@@ -266,7 +241,6 @@ body {
 img.estrella {
     width: 9rem;
     height: auto;
-    margin: 0 auto 1rem;
 }
 
 /* ----------------------------- */
