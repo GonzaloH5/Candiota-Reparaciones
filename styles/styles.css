@@ -63,7 +63,7 @@ body {
 
 .sections-grid-sobre {
     display: grid;
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-rows: 0.5fr 2fr 1fr;
     gap: 0;
     height: 100%;
 }
@@ -124,7 +124,7 @@ body {
 }
 
 /* ------------------ */
-/* SERVICIOS INICIO */
+/* SERVICIOS (Menu Principal) */
 /* ------------------ */
 
 .servicios-line {
@@ -194,7 +194,7 @@ body {
 .titulo-sobre-nosotros-box {
     background-color: #e8eef1;
     display: flex;
-    justify-content: center;
+    justify-content: top;
     flex-direction: column;
     align-items: center;
     padding: 4rem 2rem;
@@ -224,6 +224,89 @@ body {
 }
 
 /* ----------------------------- */
+/* Seccion de Resumen Nosotros */
+/* ----------------------------- */
+.resumennosotros {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #dae5ea;
+    font-size: 1.4rem;
+}
+
+.resumennosotros img {
+    width: 550px;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: #bdd9e8 0px 4px 8px 0px;
+}
+
+.resumentitulo {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6rem;
+    margin: 4rem;
+}
+
+.resumentitulo div {
+    width: 500px;
+    flex-direction: column;
+}
+
+.resumentituloreverse {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    gap: 6rem;
+    margin: 4rem;
+}
+
+.resumentituloreverse div {
+    width: 500px;
+    flex-direction: column;
+}
+
+/* ----------------------------- */
+/* FAQ */
+/* ----------------------------- */
+.faqs {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 8rem;
+    margin-bottom: 5rem;
+    justify-content: center;
+    align-content: center;
+}
+
+.tarjeta {
+    background-color: #ccc;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    border: 3px solid #e8e3e3;
+
+}
+
+/* ----------------------- */
+/* FIN DE SOBRE NOSOTROS */
+/* ----------------------- */
+/* SERVICIOS (Pagina)*/
+/* ----------------------------- */
+
+
+
+
+
+
+
 /* Galeria */
 /* ----------------------------- */
 .galeria {
@@ -278,24 +361,6 @@ img.estrella {
 }
 
 /* ----------------------------- */
-/* FAQ */
-/* ----------------------------- */
-.faqs {
-    text-align: center;
-    margin: 8rem;
-    margin-bottom: 5rem;
-}
-
-.tarjeta {
-    background-color: #ccc;
-    padding: 1rem;
-    margin: 1rem 0;
-    border-radius: 5px;
-    border: 3px solid #e8e3e3;
-}
-
-
-/* ----------------------------- */
 /* Formulario */
 /* ----------------------------- */
 .agendar h2 {
@@ -327,80 +392,6 @@ img.estrella {
     margin-right: 1rem;
 }
 
-/* ----------------------------- */
-/* Sobre Nosotros */
-/* ----------------------------- */
-
-.resumennosotros {
-    background-color: #a2adc7;
-}
-
-.resumennosotros img {
-    border-radius: 10px;
-    border: 5px outset #968ec0;
-    width: 500px;
-    height: auto;
-}
-
-.tarjetanosotros {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 6rem;
-    flex-wrap: wrap;
-    padding: 2rem;
-    /* ✅ centra el contenedor en la página */
-}
-
-
-.tarjetanosotros .texto {
-    width: 300px;
-    height: auto;
-    color: #333;
-    text-align: left;
-}
-
-.tarjetanosotros h3 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.tarjetanosotros p {
-    width: 600px;
-    height: auto;
-    font-size: 1.5rem;
-    line-height: 1.5;
-}
-
-.tarjetanosotros2 {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
-    gap: 6rem;
-    flex-wrap: wrap;
-    padding: 2rem;
-    /* ✅ centra el contenedor en la página */
-}
-
-.tarjetanosotros2 .texto {
-    width: 300px;
-    height: auto;
-    color: #333;
-    text-align: left;
-}
-
-.tarjetanosotros2 h3 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.tarjetanosotros2 p {
-    width: 600px;
-    height: auto;
-    font-size: 1.5rem;
-    line-height: 1.5;
-}
 
 /* RESPONSIVE */
 
