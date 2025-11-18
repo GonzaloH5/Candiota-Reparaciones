@@ -10,7 +10,7 @@
     <title>Galería</title>
 </head>
 
-<body>
+<body class="page-grid">
     <header>
         <nav class="navbar navbar-expand-lg ps-5 line" style="background:#eff2f4;">
             <div class="container-fluid">
@@ -34,12 +34,12 @@
     </header>
 
 
-    <main>
+    <main class="sections-grid-galeria">
         <!-- Titulo Principal -->
         <!-- Seccion de Galeria -->
         <section class="titulo-galeria">
             <h1>GALERIA</h1>
-            <div>
+            <div class="line">
                 <video src="../assets/videos/iniciogaleria.mp4" autoplay muted loop playsinline></video>
             </div>
 
@@ -54,8 +54,8 @@
         <!-- Seccion de Testimonios -->
         <section>
             <!-- Primer testimonio -->
-            <article>
-                <div class="testimonio">
+            <article class="testimonio-galeria">
+                <div class="testimonio-mensaje">
                     <h3>Reparacion de Motor</h3>
                     <p>El cliente llegó con pérdida de potencia y ruidos en el motor. Se realizó diagnóstico completo,
                         cambio de juntas,
@@ -64,15 +64,15 @@
                         menos de 48 horas.</p>
                 </div>
 
-                <figure class="imgtestimonio">
-                    <img src="../assets/images/motor.jpg" alt="Reparación de motor">
-                    <blockquote>”Excelente Trabajo, Muy satisfecho!”</blockquote>
+                <figure class="testimonio-media">
+                    <blockquote class="blockquote-left">”Excelente Trabajo, Muy satisfecho!”</blockquote>
+                    <img src=" ../assets/images/motor.jpg" alt="Reparación de motor">
                 </figure>
             </article>
 
             <!-- Segundo Testimonio -->
-            <article>
-                <div class="testimonio">
+            <article class="testimonio-galeria reverse">
+                <div class="testimonio-mensaje">
                     <h3>Alineación y cambio de frenos</h3>
                     <p>El vehículo presentaba vibraciones al frenar y desgaste irregular en los neumáticos. Se
                         reemplazaron discos y pastillas
@@ -80,17 +80,18 @@
                         estabilidad y frenado.</p>
                 </div>
 
-                <figure class="imgtestimonio">
+                <figure class="testimonio-media">
                     <img src="../assets/images/freno.jpg" alt="Alineación y frenos">
-                    <blockquote>”Frena perfecto ahora.”</blockquote>
+                    <blockquote class="blockquote-right">”Frena perfecto ahora.”</blockquote>
                 </figure>
             </article>
         </section>
 
         <!-- Enviar a Servicios -->
-        <section class="serviciosfooter">
-            <h2>Deja tu auto en manos expertas!</h2>
-            <p>Agenda tu turno hoy mismo y volve a disfrutar de manejar sin preocupaciones.</p>
+        <section class="servicios-footer">
+            <h2 class="servicios-titulo-footer">Deja tu auto en manos expertas!</h2>
+            <p class="servicios-text-footer">Agenda tu turno hoy mismo y volve a disfrutar de manejar sin
+                preocupaciones.</p>
             <a href="servicios.html">Servicios</a>
         </section>
     </main>
