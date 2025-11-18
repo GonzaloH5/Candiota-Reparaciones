@@ -33,41 +33,51 @@
         </nav>
     </header>
     <main>
-        <div>
+
+        <!-- Titulo -->
+        <div class="soporte-titulo">
             <h1>Contactanos</h1>
             <h2>Soporte</h2>
         </div>
 
 
         <!-- Enviar Problema  -->
-        <section class="agendarhora">
-            <form action="email.php" method="POST">
-                <div>
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" required>
-
-                    <label for="email">Correo Electrónico</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="problema">Problema</label>
-                    <textarea name="problema" id="problema" rows="4" required></textarea>
-
-                    <button type="submit" id="enviar">ENVIAR</button>
+        <section class="agendarhora-soporte">
+            <article class="form-soporte">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" placeholder="Tu nombre">
                 </div>
-            </form>
+
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Correo Electronico</label>
+                    <input type="email" class="form-control" placeholder="Direccion de correo">
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Describe tu problema</label>
+                    <textarea class="form-control" rows="3"></textarea>
+                </div>
+                <button type="button" class="btn btn-primary">Enviar</button>
+            </article>
+
             <div class="agendarhora-info">
                 <img src="../assets/images/mecanica.jpg" alt="mecanica">
-
-                <p>Contactanos y te responderemos lo antes posible. Estamos para brindarte el mejor servicio en
-                    reparación y
-                    mantenimiento
-                    automotriz.</p>
             </div>
         </section>
 
-        <section>
-            <!-- RESEÑA JUAN -->
-            <div>
+        <!-- Subtitulo -->
+        <div class="subtitulo-soporte">
+            <p>Contactanos y te responderemos lo antes posible. Estamos para brindarte el mejor servicio en
+                reparación y mantenimiento automotriz.</p>
+        </div>
+
+
+
+
+        <!-- RESEÑAS -->
+        <section class="reseñas-card">
+            <div> <!-- RESEÑA JUAN -->
                 <article class="imgreseña">
                     <figure>
                         <img src="../assets/images/juan.jpg" alt="Juan, técnico especialista">
@@ -80,8 +90,8 @@
                 </article>
             </div>
 
-            <!-- RESEÑA SOFIA -->
-            <div>
+
+            <div> <!-- RESEÑA SOFIA -->
                 <article class="imgreseña">
                     <figure>
                         <img src="../assets/images/sofia.jpg" alt="Sofía, jefa de taller">
@@ -92,10 +102,10 @@
                     <blockquote>”Muy buen servicio, rápidos y confiables. Se nota que saben lo que hacen.”</blockquote>
                 </article>
 
-                <!-- RESEÑA SERGIO -->
+
             </div>
 
-            <div>
+            <div> <!-- RESEÑA SERGIO -->
                 <article class="imgreseña">
                     <figure>
                         <img src="../assets/images/sergio.jpg" alt="Sergio, especialista en transmisiones">
@@ -108,6 +118,11 @@
                 </article>
             </div>
         </section>
+
+
+
+
+
 
         <!-- Enviar a Servicios -->
         <section class="serviciosfooter">

@@ -568,6 +568,71 @@ img.estrella {
     transform: translateX(90%);
 }
 
+/* -------------------------- */
+/* FIN DE GALERIA */
+/* -------------------------- */
+
+
+
+/* -------------------------- */
+/* INICIO DE SOPORTE */
+/* -------------------------- */
+.soporte-titulo {
+    background-color: #e8eef1;
+    align-content: center;
+    padding: 8rem 2rem;
+    text-align: center;
+}
+
+.soporte-titulo h1 {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+}
+
+.soporte-titulo h2 {
+    font-size: 2rem;
+}
+
+/* -------------------------- */
+/* Formulario Soporte */
+/* -------------------------- */
+
+/* Disposición en columna para el formulario de soporte */
+.agendarhora-soporte {
+    background-color: #eff2f4;
+    border-radius: 5px;
+    margin: 4rem;
+    padding: 4rem 6rem;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+
+}
+
+.form-soporte {
+    width: 350px;
+    align-content: center;
+    font-size: 1.3rem;
+}
+
+.agendarhora-info img {
+    width: 500px;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: #bdd9e8 0px 4px 8px 0px;
+}
+
+.subtitulo-soporte {
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 3rem 8rem;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 3px;
+    box-shadow: #bdd9e8 4px 4px 8px 4px;
+    padding: 1rem;
+}
 
 /* RESPONSIVE */
 
