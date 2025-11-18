@@ -78,6 +78,13 @@ body {
     height: 100%;
 }
 
+.sections-grid-soporte {
+    display: grid;
+    grid-template-rows: 0.7fr 1.5fr 0.2fr 1fr 0.7fr;
+    gap: 0;
+    height: 100%;
+}
+
 /* -------------------------- */
 /* MENU INICIO */
 /* TITULO PRINCIPAL DEL MENU */
@@ -470,7 +477,7 @@ img.estrella {
 }
 
 .agendar input[type="email"] {
-    padding: .85rem 1rem;
+    padding: .4rem 1rem;
     width: 500px;
     border: 2px solid #bcd3df;
     border-radius: 9999px;
@@ -585,24 +592,24 @@ img.estrella {
 }
 
 .soporte-titulo h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     margin-bottom: 4rem;
+    font-weight: 500;
 }
 
 .soporte-titulo h2 {
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 /* -------------------------- */
 /* Formulario Soporte */
 /* -------------------------- */
-
-/* Disposición en columna para el formulario de soporte */
 .agendarhora-soporte {
     background-color: #eff2f4;
     border-radius: 5px;
     margin: 4rem;
     padding: 4rem 6rem;
+    align-items: center;
     justify-content: space-around;
     display: flex;
     flex-wrap: wrap;
@@ -629,10 +636,54 @@ img.estrella {
     margin: 3rem 8rem;
     font-style: italic;
     font-weight: 400;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     box-shadow: #bdd9e8 4px 4px 8px 4px;
     padding: 1rem;
 }
+
+/* ----------------------------------- */
+/* Reseñas Soporte */
+/* ----------------------------------- */
+
+.reseñas-card {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+    padding: 0 4rem 7rem;
+    margin-bottom: 2rem;
+}
+
+.reseñas-card div {
+    max-width: 350px;
+    margin: 2rem;
+    background-color: #eff2f4;
+    padding: 3rem;
+    border-radius: 6px;
+    box-shadow: #bdd9e8 0px 4px 8px 0px;
+}
+
+.imgreseña span {
+    font-size: 1.3rem;
+    font-weight: 500;
+    display: block;
+    margin-top: 2rem;
+}
+
+.imgreseña blockquote {
+    font-style: italic;
+    display: block;
+    font-size: 1.2rem;
+}
+
+.imgreseña img {
+    width: 350px;
+    height: auto;
+    box-shadow: #bdd9e8 0px 4px 8px 0px;
+    border-radius: 6px;
+}
+
+/* -------------------------- */
 
 /* RESPONSIVE */
 
