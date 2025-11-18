@@ -4,23 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
     <title>Galería</title>
 </head>
 
 <body>
     <header>
-        <nav aria-label="Navegacion principal">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="soporte.html">Soporte</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg ps-5 line" style="background:#eff2f4;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Candiota Reparaciones</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav gap-4">
+                        <a class="nav-link active" href="../index.html">Inicio</a>
+                        <a class="nav-link" href="sobre.html">Sobre</a>
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                        <a class="nav-link" href="galeria.html">Galeria</a>
+                        <a class="nav-link" href="soporte.html">Soporte</a>
+                    </div>
+                </div>
+            </div>
         </nav>
-        <div>Candiota Reparaciones</div>
     </header>
+
 
     <main>
         <!-- Titulo Principal -->
@@ -28,7 +40,7 @@
         <section class="galeria">
             <h1>GALERIA</h1>
             <div>
-                <video src="../assets/videos/iniciogaleria.mp4" controls></video>
+                <video src="../assets/videos/iniciogaleria.mp4" autoplay muted loop playsinline></video>
             </div>
 
             <div class="imagenesgaleria">
@@ -45,9 +57,11 @@
             <article>
                 <div class="testimonio">
                     <h3>Reparacion de Motor</h3>
-                    <p>El cliente llegó con pérdida de potencia y ruidos en el motor. Se realizó diagnóstico completo, cambio de juntas,
-                    limpieza de inyectores y puesta a punto. El vehículo recuperó su rendimiento original y quedó listo para la entrega en
-                    menos de 48 horas.</p>
+                    <p>El cliente llegó con pérdida de potencia y ruidos en el motor. Se realizó diagnóstico completo,
+                        cambio de juntas,
+                        limpieza de inyectores y puesta a punto. El vehículo recuperó su rendimiento original y quedó
+                        listo para la entrega en
+                        menos de 48 horas.</p>
                 </div>
 
                 <figure class="imgtestimonio">
@@ -60,10 +74,12 @@
             <article>
                 <div class="testimonio">
                     <h3>Alineación y cambio de frenos</h3>
-                    <p>El vehículo presentaba vibraciones al frenar y desgaste irregular en los neumáticos. Se reemplazaron discos y pastillas
-                    de freno, y se realizó alineación y balanceo completo. El cliente notó la mejora inmediata en la estabilidad y frenado.</p>
+                    <p>El vehículo presentaba vibraciones al frenar y desgaste irregular en los neumáticos. Se
+                        reemplazaron discos y pastillas
+                        de freno, y se realizó alineación y balanceo completo. El cliente notó la mejora inmediata en la
+                        estabilidad y frenado.</p>
                 </div>
-            
+
                 <figure class="imgtestimonio">
                     <img src="../assets/images/freno.jpg" alt="Alineación y frenos">
                     <blockquote>”Frena perfecto ahora.”</blockquote>
