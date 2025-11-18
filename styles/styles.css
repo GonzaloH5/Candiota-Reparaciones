@@ -475,18 +475,34 @@ img.estrella {
 /* ----------------------------- */
 /* GALERIA */
 /* ----------------------------- */
-.galeria h1 {
+.titulo-galeria h1 {
     text-align: center;
     margin: 10rem 0;
     font-size: 4rem;
 }
 
-.galeria video {
+.titulo-galeria video {
     width: 100%;
     height: auto;
     display: block;
     margin: 0 auto 4rem;
 }
+
+.imagenesgaleria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 6rem;
+}
+
+.imagenesgaleria img {
+    width: 300px;
+    height: auto;
+    box-shadow: #deefff 0px 4px 8px 0px;
+    border-radius: 10px;
+}
+
 
 /* ----------------------------- */
 /* Formulario */
