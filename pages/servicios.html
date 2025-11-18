@@ -4,56 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
     <title>Servicios</title>
 </head>
 
 <body>
     <header>
-        <nav aria-label="Navegacion principal">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="soporte.html">Soporte</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg ps-5 line" style="background:#eff2f4;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Candiota Reparaciones</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav gap-4">
+                        <a class="nav-link active" href="../index.html">Inicio</a>
+                        <a class="nav-link" href="sobre.html">Sobre</a>
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                        <a class="nav-link" href="galeria.html">Galeria</a>
+                        <a class="nav-link" href="soporte.html">Soporte</a>
+                    </div>
+                </div>
+            </div>
         </nav>
-        <div>Candiota Reparaciones</div>
     </header>
 
     <main>
         <!-- Titulo Principal -->
-        <section class="fondogris">
-            <div class="encabezado">
+        <section class="titulo-servicios">
+            <img class="imagentitulo" src="../assets/images/cocheportada.jpg"
+                alt="Coche en el taller, servicio destacado"> <!-- Imagen de la Izquierda -->
+            <div class="encabezado-servicios">
                 <h1>SERVICIOS</h1> <!-- Titulo -->
-                <h2>Tu taller de confianza</h2>        
+                <h2>Tu taller de confianza</h2>
                 <form action="email.php" method="POST"> <!-- Agendar -->
                     <div>
-                    <label for="email-agenda-1">AGENDATE AHORA</label>
+                        <label for="email-agenda-1">AGENDATE AHORA</label>
                     </div>
                     <div class="agendar">
-                        <input type="email" id="email-agenda-1" name="email-agenda" required>
-                        <button type="submit">AVANZAR</button>
+                        <input type="email" name="email-agenda" placeholder="Dirección de correo" required>
+                        <button type="button" class="btn btn-primary">Avanzar</button>
                     </div>
                 </form>
             </div>
-            <img class="imagentitulo" src="../assets/images/cocheportada.jpg" alt="Coche en el taller, servicio destacado"> <!-- Imagen de la Izquierda -->
         </section>
-    
+
 
         <!-- Seccion de Servicios -->
         <section class="servicios">
+            <img src="../assets/images/casa.png" alt="Icono de casa">
             <div>
-                <img src="../assets/images/casa.png" alt="Icono de casa"> 
                 <h3>SERVICIOS</h3>
-                <p class="subrayado">Diagnóstico y reparación de motores, suspensión, frenos, embragues y transmisiones. Nos ocupamos de todo tipo de
-                vehículos, siempre con materiales de calidad y garantía de trabajo.</p>
+                <p class="subrayado">Diagnóstico y reparación de motores, suspensión, frenos, embragues y transmisiones.
+                    Nos ocupamos de todo tipo de
+                    vehículos, siempre con materiales de calidad y garantía de trabajo.</p>
             </div>
         </section>
 
         <!-- Seccion de Testimonios -->
-        <section class="testimonios">
+        <section class="testimonios-servicios">
             <!-- Testimonio 1 -->
             <div>
                 <img src="../assets/icons/comillas.webp" alt=""> <!-- Comillas -->
@@ -71,17 +84,14 @@
 
 
         <!-- Agenda -->
-        <section class="agendar">
+        <section class="agendarfooter-servicios">
             <h2>Deja tu auto en manos expertas!</h2>
             <div class="agendar-form">
                 <p>Agenda hora ingresando tu Email</p>
                 <form action="email.php" method="POST"> <!-- Agendar -->
-                    <div>
-                    <label for="email-agenda-2">AGENDATE AHORA</label>
-                    </div>
                     <div class="agendar">
-                        <input type="email" id="email-agenda-2" name="email-agenda" required>
-                        <button type="submit">AVANZAR</button>
+                        <input type="email" name="email-agenda" placeholder="Dirección de correo" required>
+                        <button type="submit" class="btn btn-primary">AVANZAR</button>
                     </div>
                 </form>
             </div>
@@ -102,4 +112,5 @@
     </footer>
 
 </body>
+
 </html>
