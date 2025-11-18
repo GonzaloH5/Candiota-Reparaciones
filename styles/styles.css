@@ -21,6 +21,10 @@ a {
     color: inherit;
 }
 
+.navbar-site {
+    background: #eff2f4;
+}
+
 /* LINEA SEPARADORA*/
 .line {
     border: 4px dashed #e3f0f6;
@@ -523,6 +527,13 @@ img.estrella {
 /* ----------------------------- */
 /* Testimonios galeria */
 /* ----------------------------- */
+
+.testimonio-galeria-titulo {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
 .testimonio-galeria {
     display: flex;
     justify-content: space-around;
@@ -684,16 +695,16 @@ img.estrella {
 }
 
 /* -------------------------- */
-
 /* RESPONSIVE */
+/* -------------------------- */
 
-/* Mobile: filas 1,3,4 solo su alto de contenido (auto), 2 y 5 pueden crecer */
+/* Mobile: (Inicio) filas 1,3,4 solo su alto de contenido (auto), 2 y 5 pueden crecer */
 @media (max-width: 600px) {
-    .sections-grid {
+    .sections-grid-inicio {
         grid-template-rows: auto minmax(0, 1fr) auto auto minmax(0, 1fr);
     }
 
-    .sections-grid>* {
+    .sections-grid-inicio>* {
         min-height: 0;
     }
 }

@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Galería de trabajos y testimonios de Candiota Reparaciones: calidad, rapidez y confianza en servicios automotrices.">
+    <meta name="author" content="Candiota Reparaciones">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
@@ -22,10 +25,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav gap-4">
-                        <a class="nav-link active" href="../index.html">Inicio</a>
+                        <a class="nav-link" href="../index.html">Inicio</a>
                         <a class="nav-link" href="sobre.html">Sobre</a>
                         <a class="nav-link" href="servicios.html">Servicios</a>
-                        <a class="nav-link" href="galeria.html">Galeria</a>
+                        <a class="nav-link active" href="galeria.html">Galeria</a>
                         <a class="nav-link" href="soporte.html">Soporte</a>
                     </div>
                 </div>
@@ -35,24 +38,28 @@
 
 
     <main class="sections-grid-galeria">
+
         <!-- Titulo Principal -->
-        <!-- Seccion de Galeria -->
         <section class="titulo-galeria">
-            <h1>GALERIA</h1>
+            <h1>Galería</h1>
             <div class="line">
-                <video src="../assets/videos/iniciogaleria.mp4" autoplay muted loop playsinline></video>
+                <video src="../assets/videos/iniciogaleria.mp4" autoplay muted loop playsinline
+                    aria-label="Video introductorio de la galería"></video>
             </div>
 
-            <div class="imagenesgaleria">
-                <img src="../assets/images/galeria1.jpg" alt="Interior del taller con vehículo en elevador">
-                <img src="../assets/images/galeria2.jpg" alt="Técnico revisando motor">
-                <img src="../assets/images/galeria3.jpg" alt="Área de repuestos y herramientas ordenadas">
-                <img src="../assets/images/galeria4.jpg" alt="Equipo trabajando en alineación de ruedas">
+            <div class="imagenesgaleria" aria-label="Imágenes de trabajos realizados">
+                <img src="../assets/images/galeria1.jpg" alt="Interior del taller con vehículo en elevador"
+                    loading="lazy">
+                <img src="../assets/images/galeria2.jpg" alt="Técnico revisando motor" loading="lazy">
+                <img src="../assets/images/galeria3.jpg" alt="Área de repuestos y herramientas ordenadas"
+                    loading="lazy">
+                <img src="../assets/images/galeria4.jpg" alt="Equipo trabajando en alineación de ruedas" loading="lazy">
             </div>
         </section>
 
         <!-- Seccion de Testimonios -->
         <section>
+            <h2 class="testimonio-galeria-titulo">Testimonios</h2>
             <!-- Primer testimonio -->
             <article class="testimonio-galeria">
                 <div class="testimonio-mensaje">
@@ -65,7 +72,9 @@
                 </div>
 
                 <figure class="testimonio-media">
-                    <blockquote class="blockquote-left">”Excelente Trabajo, Muy satisfecho!”</blockquote>
+                    <blockquote class="blockquote-left">
+                        <p>"Excelente trabajo, muy satisfecho"</p>
+                    </blockquote>
                     <img src="../assets/images/motor.jpg" alt="Reparación de motor">
                 </figure>
             </article>
@@ -82,10 +91,15 @@
 
                 <figure class="testimonio-media">
                     <img src="../assets/images/freno.jpg" alt="Alineación y frenos">
-                    <blockquote class="blockquote-right">”Frena perfecto ahora.”</blockquote>
+                    <blockquote class="blockquote-right">
+                        <p>"Frena perfecto ahora"</p>
+                    </blockquote>
                 </figure>
             </article>
         </section>
+
+
+
 
         <!-- Enviar a Servicios -->
         <section class="servicios-footer">
@@ -96,6 +110,9 @@
         </section>
     </main>
 
+
+
+
     <footer>
         <p>© 2025 Candiota <span class="negrita">Reparaciones</span></p>
         <nav>
@@ -103,11 +120,14 @@
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="galeria.html" aria-current="page">Galería</a></li>
                 <li><a href="soporte.html">Soporte</a></li>
             </ul>
         </nav>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
