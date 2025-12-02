@@ -1,0 +1,30 @@
+/* ----------------------------- */
+/* - Enviar a servicios */
+/* ----------------------------- */
+.servicios-footer {
+    background-color: $footer-color;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+
+    h2 {
+        font-size: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    a {
+        font-size: 1.3rem;
+        font-style: italic;
+        max-width: 500px;
+    }
+
+    a:hover {
+        font-size: 1.6rem;
+    }
+}

@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: #e8eef1;
+    background-color: $primary-color;
     justify-content: center;
     gap: 4rem;
 
@@ -61,7 +61,7 @@
     flex-direction: column;
     text-align: center;
     flex-wrap: wrap;
-    background-color: #f9fafd;
+    background-color: $secondary-color;
     padding: 8rem 2rem;
     border-bottom: #e4e6ee 3px solid;
 }
@@ -101,7 +101,7 @@
 /* ----------------------------- */
 
 .agendarfooter-servicios {
-    background-color: #edf8fd;
+    background-color: $secondary-color;
     align-content: center;
     justify-content: center;
     text-align: left;
@@ -136,7 +136,7 @@
     flex-direction: column;
     text-align: center;
     flex-wrap: wrap;
-    background-color: #f9fafd;
+    background-color: $secondary-color;
     padding: 8rem 2rem;
     border-bottom: #e4e6ee 3px solid;
 }
@@ -176,7 +176,7 @@
 /* ----------------------------- */
 
 .agendarfooter-servicios {
-    background-color: #edf8fd;
+    background-color: $secondary-color;
     align-content: center;
     justify-content: center;
     text-align: left;

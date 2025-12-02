@@ -1,0 +1,23 @@
+// UTILITIES
+@use 'variables';
+@use 'mixins';
+@use 'extends';
+@use 'utils';
+
+// BASE
+@use 'base';
+@use 'layout';
+@use 'tipografia';
+
+
+// COMPONENTS
+@use 'navbar';
+@use 'footer';
+@use 'components';
+
+// PAGES
+@use 'pages/inicio';
+@use 'pages/galeria';
+@use 'pages/servicios';
+@use 'pages/sobrenosotros';
+@use 'pages/soporte';
