@@ -1,28 +1,4 @@
 @charset "UTF-8";
-/* Reset CSS */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Fuente de letra */
-body {
-  font-family: "Nunito", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
 /* LINEA SEPARADORA*/
 .line {
   border: 4px dashed #e3f0f6;
@@ -36,20 +12,28 @@ a {
   font-weight: 700;
 }
 
-.navbar-site {
-  background: #eff2f4;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
-ul {
-  display: flex;
-  gap: 2rem;
-  list-style: none;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-footer {
-  background-color: #e8eef1;
-  padding: 2rem;
-  display: flex;
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fuente de letra */
+body {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
 
 /* -------------------------- */
@@ -86,6 +70,22 @@ footer {
   grid-template-rows: 0.7fr 1.5fr 0.2fr 1fr 0.7fr;
   gap: 0;
   height: 100%;
+}
+
+.navbar-site {
+  background: #eff2f4;
+}
+
+ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+footer {
+  background-color: #e8eef1;
+  padding: 2rem;
+  display: flex;
 }
 
 /* ----------------------------- */
@@ -141,7 +141,6 @@ footer {
   background-color: #f9fafd;
   align-content: center;
 }
-
 .beneficios h2 {
   text-align: center;
   margin: 3rem 0;
@@ -159,7 +158,6 @@ footer {
   text-align: center;
   width: 300px;
 }
-
 .beneficio img {
   width: 9rem;
   height: auto;
@@ -177,18 +175,17 @@ footer {
   font-style: italic;
   padding: 5rem 0;
 }
+.testimonio .testimonio img {
+  width: 11rem;
+  height: auto;
+  margin: 0 auto 1rem;
+  display: block;
+}
 
 .testimonio-figure h5 {
   margin-top: 1rem;
   font-size: 1.5rem;
   font-style: normal;
-}
-
-.testimonio img {
-  width: 11rem;
-  height: auto;
-  margin: 0 auto 1rem;
-  display: block;
 }
 
 img.estrella {
@@ -253,7 +250,6 @@ img.estrella {
   gap: 2rem;
   margin: 6rem 0;
 }
-
 .imagenesgaleria img {
   width: 330px;
   height: auto;
@@ -290,7 +286,6 @@ img.estrella {
   position: relative;
   display: inline-block;
 }
-
 .testimonio-media img {
   width: 600px;
   height: auto;
@@ -298,7 +293,6 @@ img.estrella {
   border-radius: 6px;
   border: 2px solid #bdd9e8;
 }
-
 .testimonio-media blockquote {
   position: absolute;
   font-style: italic;

@@ -1,23 +1,23 @@
 // UTILITIES
-@use 'variables';
-@use 'mixins';
-@use 'extends';
-@use 'utils';
+@import './partials/utilities/variables';
+@import './partials/utilities/mixins';
+@import './partials/utilities/extends';
+@import './partials/utilities/utils';
 
 // BASE
-@use 'base';
-@use 'layout';
-@use 'tipografia';
-
+@import './partials/base/base';
+@import './partials/base/reset';
+@import './partials/base/tipografia';
+@import './partials/base/layout';
 
 // COMPONENTS
-@use 'navbar';
-@use 'footer';
-@use 'components';
+@import './partials/components/navbar';
+@import './partials/components/footer';
+@import './partials/components/components';
 
 // PAGES
-@use 'pages/inicio';
-@use 'pages/galeria';
-@use 'pages/servicios';
-@use 'pages/sobrenosotros';
-@use 'pages/soporte';
+@import 'pages/inicio';
+@import 'pages/galeria';
+@import 'pages/servicios';
+@import 'pages/sobrenosotros';
+@import 'pages/soporte';
