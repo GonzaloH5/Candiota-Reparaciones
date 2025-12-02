@@ -1,0 +1,36 @@
+/* -------------------------- */
+/* GRID */
+/* -------------------------- */
+
+.page-grid {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.sections-grid-inicio {
+    display: grid;
+    grid-template-rows: repeat(5, 600px);
+    gap: 0;
+    height: 100%;
+}
+
+.sections-grid-sobre {
+    display: grid;
+    grid-template-rows: 0.5fr 2fr 1fr;
+    gap: 0;
+    height: 100%;
+}
+
+.sections-grid-galeria {
+    display: grid;
+    grid-template-rows: 2fr 1fr 0.6fr;
+    gap: 0;
+    height: 100%;
+}
+
+.sections-grid-soporte {
+    display: grid;
+    grid-template-rows: 0.7fr 1.5fr 0.2fr 1fr 0.7fr;
+    gap: 0;
+    height: 100%;
+}

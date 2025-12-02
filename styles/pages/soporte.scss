@@ -1,0 +1,83 @@
+@import 'variables';
+
+/* -------------------------- */
+/* Formulario Soporte */
+/* -------------------------- */
+.agendarhora-soporte {
+    background-color: #eff2f4;
+    border-radius: 5px;
+    margin: 4rem;
+    padding: 4rem 6rem;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+
+}
+
+.form-soporte {
+    width: 350px;
+    align-content: center;
+    font-size: 1.3rem;
+}
+
+.agendarhora-info img {
+    width: 500px;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: #bdd9e8 0px 4px 8px 0px;
+}
+
+.subtitulo-soporte {
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 3rem 8rem;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 2px;
+    box-shadow: #bdd9e8 4px 4px 8px 4px;
+    padding: 1rem;
+}
+
+/* ----------------------------------- */
+/* Reseñas Soporte */
+/* ----------------------------------- */
+
+.reseñas-card {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+    padding: 0 4rem 7rem;
+    margin-bottom: 2rem;
+}
+
+.reseñas-card div {
+    max-width: 350px;
+    margin: 2rem;
+    background-color: #eff2f4;
+    padding: 3rem;
+    border-radius: 6px;
+    box-shadow: #bdd9e8 0px 4px 8px 0px;
+}
+
+.imgreseña span {
+    font-size: 1.3rem;
+    font-weight: 500;
+    display: block;
+    margin-top: 2rem;
+}
+
+.imgreseña blockquote {
+    font-style: italic;
+    display: block;
+    font-size: 1.2rem;
+}
+
+.imgreseña img {
+    width: 350px;
+    height: auto;
+    box-shadow: #bdd9e8 0px 4px 8px 0px;
+    border-radius: 6px;
+}

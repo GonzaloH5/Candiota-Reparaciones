@@ -1,0 +1,73 @@
+@import 'variables';
+
+/* ----------------------------- */
+/* Seccion de Resumen Nosotros */
+/* ----------------------------- */
+.resumennosotros {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #dae5ea;
+    font-size: 1.4rem;
+}
+
+.resumennosotros img {
+    width: 550px;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: #bdd9e8 0px 4px 8px 0px;
+}
+
+.resumentitulo {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6rem;
+    margin: 4rem;
+}
+
+.resumentitulo div {
+    width: 500px;
+    flex-direction: column;
+}
+
+.resumentituloreverse {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    gap: 6rem;
+    margin: 4rem;
+}
+
+.resumentituloreverse div {
+    width: 500px;
+    flex-direction: column;
+}
+
+/* ----------------------------- */
+/* FAQ */
+/* ----------------------------- */
+.faqs {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 8rem;
+    margin-bottom: 5rem;
+    justify-content: center;
+    align-content: center;
+}
+
+.tarjeta {
+    background-color: #ccc;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    border: 3px solid #e8e3e3;
+
+}

@@ -1,0 +1,24 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fuente de letra */
+body {
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
