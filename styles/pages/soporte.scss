@@ -1,4 +1,23 @@
-@import 'variables';
+/* -------------------------- */
+/* INICIO DE SOPORTE */
+/* -------------------------- */
+.soporte-titulo {
+    background-color: #e8eef1;
+    align-content: center;
+    padding: 8rem 2rem;
+    text-align: center;
+
+    h1 {
+        font-size: 5rem;
+        margin-bottom: 4rem;
+        font-weight: 500;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+}
 
 /* -------------------------- */
 /* Formulario Soporte */
