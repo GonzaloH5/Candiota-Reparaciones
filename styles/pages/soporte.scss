@@ -28,9 +28,7 @@
     margin: 4rem;
     padding: 4rem 6rem;
     align-items: center;
-    justify-content: space-around;
-    display: flex;
-    flex-wrap: wrap;
+    @include flex;
     flex-direction: row-reverse;
 
 }
@@ -64,10 +62,8 @@
 /* ----------------------------------- */
 
 .reseñas-card {
-    display: flex;
     flex-wrap: wrap;
-    text-align: center;
-    justify-content: space-between;
+    @include flex($justify-content: center);
     padding: 0 4rem 7rem;
     margin-bottom: 2rem;
 }

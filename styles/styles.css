@@ -92,7 +92,7 @@ footer {
 /* - Enviar a servicios */
 /* ----------------------------- */
 .servicios-footer {
-  background-color: #d6f0f6;
+  background-color: #f2fcfe;
   align-content: center;
   justify-content: center;
   text-align: center;
@@ -169,8 +169,8 @@ footer {
 /* ----------------------------- */
 .testimonio {
   text-align: center;
-  justify-items: center;
-  align-content: center;
+  justify-content: center;
+  align-items: center;
   background-color: #e8eef1;
   font-style: italic;
   padding: 5rem 0;
@@ -200,18 +200,18 @@ img.estrella {
 /* ------------------ */
 .servicios-line {
   background-color: #f9fafd;
-  display: flex;
   flex-direction: row;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
 .tarjetaservicios {
-  justify-items: center;
-  align-content: center;
+  text-align: center;
+  align-items: center;
   padding: 2rem;
   max-width: 400px;
-  text-align: center;
+  align-content: center;
 }
 .tarjetaservicios img {
   width: 300px;
@@ -270,7 +270,8 @@ img.estrella {
 
 .testimonio-galeria {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .testimonio-mensaje {
@@ -322,10 +323,10 @@ img.estrella {
 /* SERVICIOS  */
 /* ----------------------------- */
 .titulo-servicios {
-  display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   background-color: #e8eef1;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 4rem;
 }
@@ -394,9 +395,9 @@ img.estrella {
 /* Testimonios Servicios */
 /* ---------------------------------------------- */
 .testimonios-servicios {
+  text-align: center;
   display: flex;
   flex-wrap: wrap;
-  text-align: center;
   justify-content: space-around;
   padding: 7rem 4rem;
 }
@@ -466,9 +467,9 @@ img.estrella {
 /* Testimonios Servicios */
 /* ---------------------------------------------- */
 .testimonios-servicios {
+  text-align: center;
   display: flex;
   flex-wrap: wrap;
-  text-align: center;
   justify-content: space-around;
   padding: 7rem 4rem;
 }
@@ -576,10 +577,11 @@ img.estrella {
 
 .resumentituloreverse {
   display: flex;
-  text-align: center;
+  flex-wrap: wrap;
   justify-content: space-around;
   flex-direction: row-reverse;
-  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-around;
   gap: 6rem;
   margin: 4rem;
 }
@@ -593,12 +595,12 @@ img.estrella {
 /* FAQ */
 /* ----------------------------- */
 .faqs {
-  display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   text-align: center;
   margin: 8rem;
   margin-bottom: 5rem;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-content: center;
 }
@@ -638,9 +640,9 @@ img.estrella {
   margin: 4rem;
   padding: 4rem 6rem;
   align-items: center;
-  justify-content: space-around;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   flex-direction: row-reverse;
 }
 
@@ -672,10 +674,10 @@ img.estrella {
 /* Reseñas Soporte */
 /* ----------------------------------- */
 .reseñas-card {
+  flex-wrap: wrap;
   display: flex;
   flex-wrap: wrap;
-  text-align: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0 4rem 7rem;
   margin-bottom: 2rem;
 }

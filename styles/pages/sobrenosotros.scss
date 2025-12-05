@@ -69,11 +69,10 @@
 }
 
 .resumentituloreverse {
-    display: flex;
+    @include flex;
+    flex-direction: row-reverse;
     text-align: center;
     justify-content: space-around;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
     gap: 6rem;
     margin: 4rem;
 }
@@ -87,13 +86,11 @@
 /* FAQ */
 /* ----------------------------- */
 .faqs {
-    display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     text-align: center;
     margin: 8rem;
     margin-bottom: 5rem;
-    justify-content: center;
+    @include flex($justify-content: center);
     align-content: center;
 }
 

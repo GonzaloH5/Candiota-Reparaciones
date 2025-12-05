@@ -3,11 +3,9 @@
 /* ----------------------------- */
 
 .titulo-servicios {
-    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     background-color: $primary-color;
-    justify-content: center;
+    @include flex($justify-content: center);
     gap: 4rem;
 
     img {
@@ -83,10 +81,8 @@
 /* ---------------------------------------------- */
 
 .testimonios-servicios {
-    display: flex;
-    flex-wrap: wrap;
     text-align: center;
-    justify-content: space-around;
+    @include flex;
     padding: 7rem 4rem;
 }
 
@@ -158,10 +154,8 @@
 /* ---------------------------------------------- */
 
 .testimonios-servicios {
-    display: flex;
-    flex-wrap: wrap;
     text-align: center;
-    justify-content: space-around;
+    @include flex;
     padding: 7rem 4rem;
 }
 

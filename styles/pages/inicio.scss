@@ -36,9 +36,7 @@
 }
 
 .beneficios-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    @include flex;
 }
 
 .beneficio {
@@ -59,9 +57,7 @@
 /* Testimonios */
 /* ----------------------------- */
 .testimonio {
-    text-align: center;
-    justify-items: center;
-    align-content: center;
+    @include center-content;
     background-color: $primary-color;
     font-style: italic;
     padding: 5rem 0;
@@ -93,18 +89,16 @@ img.estrella {
 
 .servicios-line {
     background-color: $secondary-color;
-    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    @include flex;
 }
 
 .tarjetaservicios {
-    justify-items: center;
-    align-content: center;
+    text-align: center;
+    align-items: center;
     padding: 2rem;
     max-width: 400px;
-    text-align: center;
+    align-content: center;
 
     img {
         width: 300px;

@@ -1,6 +1,7 @@
 /* ----------------------------- */
 /* GALERIA */
 /* ----------------------------- */
+
 .titulo-galeria {
 
     h1 {
@@ -19,9 +20,7 @@
 }
 
 .imagenesgaleria {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    @include flex($justify-content: center);
     gap: 2rem;
     margin: 6rem 0;
 
@@ -46,8 +45,7 @@
 }
 
 .testimonio-galeria {
-    display: flex;
-    justify-content: space-around;
+    @include flex($display: flex, $justify-content: center);
 }
 
 .testimonio-mensaje {
