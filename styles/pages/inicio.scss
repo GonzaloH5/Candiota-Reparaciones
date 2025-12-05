@@ -66,13 +66,12 @@
     font-style: italic;
     padding: 5rem 0;
 
-    .testimonio img {
+    img {
         width: 11rem;
         height: auto;
         margin: 0 auto 1rem;
         display: block;
     }
-
 }
 
 .testimonio-figure h5 {
@@ -81,11 +80,11 @@
     font-style: normal;
 }
 
-
-
 img.estrella {
     width: 9rem;
     height: auto;
+    display: block;
+    margin: 0.5rem auto 0;
 }
 
 /* ------------------ */

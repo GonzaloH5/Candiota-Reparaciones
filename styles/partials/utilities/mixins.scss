@@ -1,0 +1,11 @@
+    @mixin flex($display: flex, $flex-wrap: wrap, $justify-content: space-around) {
+        display: $display;
+        flex-wrap: $flex-wrap;
+        justify-content: $justify-content;
+    }
+
+    @mixin center-content {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }

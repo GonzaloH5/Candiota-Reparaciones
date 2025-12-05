@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /* LINEA SEPARADORA*/
 .line {
   border: 4px dashed #e3f0f6;
@@ -97,20 +98,24 @@ footer {
   justify-content: center;
   text-align: center;
 }
+
 .servicios-footer h2 {
   font-size: 4rem;
   margin-bottom: 4rem;
 }
+
 .servicios-footer p {
   font-size: 1.4rem;
   margin-top: 2rem;
   margin-bottom: 4rem;
 }
+
 .servicios-footer a {
   font-size: 1.3rem;
   font-style: italic;
   max-width: 500px;
 }
+
 .servicios-footer a:hover {
   font-size: 1.6rem;
 }
@@ -124,11 +129,13 @@ footer {
   align-content: center;
   padding: 0 3.5rem;
 }
+
 .tituloprincipal h1 {
   margin-bottom: 6rem;
   font-size: 3rem;
   font-weight: 500;
 }
+
 .tituloprincipal h2 {
   font-size: 1.5rem;
   font-weight: 400;
@@ -141,6 +148,7 @@ footer {
   background-color: #f9fafd;
   align-content: center;
 }
+
 .beneficios h2 {
   text-align: center;
   margin: 3rem 0;
@@ -158,6 +166,7 @@ footer {
   text-align: center;
   width: 300px;
 }
+
 .beneficio img {
   width: 9rem;
   height: auto;
@@ -175,6 +184,7 @@ footer {
   font-style: italic;
   padding: 5rem 0;
 }
+
 .testimonio .testimonio img {
   width: 11rem;
   height: auto;
@@ -191,6 +201,8 @@ footer {
 img.estrella {
   width: 9rem;
   height: auto;
+  display: block;
+  margin: 0.5rem auto 0;
 }
 
 /* ------------------ */
@@ -211,6 +223,7 @@ img.estrella {
   max-width: 400px;
   text-align: center;
 }
+
 .tarjetaservicios img {
   width: 300px;
   height: auto;
@@ -224,10 +237,12 @@ img.estrella {
   .sections-grid-inicio {
     grid-template-rows: auto minmax(0, 1fr) auto auto minmax(0, 1fr);
   }
-  .sections-grid-inicio > * {
+
+  .sections-grid-inicio>* {
     min-height: 0;
   }
 }
+
 /* ----------------------------- */
 /* GALERIA */
 /* ----------------------------- */
@@ -237,6 +252,7 @@ img.estrella {
   font-size: 5rem;
   letter-spacing: 10px;
 }
+
 .titulo-galeria video {
   width: 100%;
   height: auto;
@@ -250,6 +266,7 @@ img.estrella {
   gap: 2rem;
   margin: 6rem 0;
 }
+
 .imagenesgaleria img {
   width: 330px;
   height: auto;
@@ -286,16 +303,19 @@ img.estrella {
   position: relative;
   display: inline-block;
 }
+
 .testimonio-media img {
   width: 600px;
   height: auto;
   display: block;
-  border-radius: 6px;
-  border: 2px solid #bdd9e8;
-}
-.testimonio-media blockquote {
-  position: absolute;
-  font-style: italic;
+
+  .testimonio img {
+    width: 11rem;
+    height: auto;
+    margin: 0 auto 1rem;
+    display: block;
+  }
+
   background-color: #bcd3df;
   max-width: 400px;
   width: 100%;
@@ -327,6 +347,7 @@ img.estrella {
   justify-content: center;
   gap: 4rem;
 }
+
 .titulo-servicios img {
   width: 600px;
   height: auto;
@@ -339,21 +360,25 @@ img.estrella {
   align-content: center;
   margin: 4rem;
 }
+
 .encabezado-servicios h1 {
   font-size: 5rem;
   margin-bottom: 3rem;
 }
+
 .encabezado-servicios h2 {
   font-size: 3rem;
   line-height: 1.5;
   margin-bottom: 2rem;
 }
+
 .encabezado-servicios label {
   display: block;
   font-weight: 700;
   letter-spacing: 0.5px;
   margin-bottom: 0.75rem;
 }
+
 .encabezado-servicios .agendar input[type=email] {
   padding: 0.85rem 1rem;
   border: 2px solid #bcd3df;
@@ -521,14 +546,17 @@ img.estrella {
 .titulo-sobre-nosotros {
   text-align: center;
 }
+
 .titulo-sobre-nosotros h1 {
   font-size: 4rem;
   margin: 2rem;
 }
+
 .titulo-sobre-nosotros h2 {
   font-size: 2rem;
   margin-top: 1rem;
 }
+
 .titulo-sobre-nosotros p {
   font-size: 1.5rem;
   max-width: 900px;
@@ -618,11 +646,13 @@ img.estrella {
   padding: 8rem 2rem;
   text-align: center;
 }
+
 .soporte-titulo h1 {
   font-size: 5rem;
   margin-bottom: 4rem;
   font-weight: 500;
 }
+
 .soporte-titulo h2 {
   font-size: 3rem;
 }
