@@ -4,8 +4,17 @@
         justify-content: $justify-content;
     }
 
-    @mixin center-content {
-        text-align: center;
-        justify-content: center;
-        align-items: center;
+    @mixin img-responsive($display: block, $center: false, $width: null) {
+        display: $display;
+        max-width: 100%;
+        height: auto;
+
+        @if $center ==true {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @if $width !=null {
+            width: $width;
+        }
     }

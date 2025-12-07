@@ -1,4 +1,9 @@
 @charset "UTF-8";
+.testimonio {
+  justify-content: center;
+  align-items: center;
+}
+
 /* LINEA SEPARADORA*/
 .line {
   border: 4px dashed #e3f0f6;
@@ -13,8 +18,9 @@
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
+  display: block;
 }
 
 a {
@@ -159,27 +165,31 @@ footer {
   width: 300px;
 }
 .beneficio img {
-  width: 9rem;
+  display: block;
+  max-width: 100%;
   height: auto;
-  margin: 0 auto 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 9rem;
+  margin-bottom: 1rem;
 }
 
 /* ----------------------------- */
 /* Testimonios */
 /* ----------------------------- */
 .testimonio {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
   background-color: #e8eef1;
   font-style: italic;
   padding: 5rem 0;
 }
 .testimonio img {
-  width: 10rem;
-  height: auto;
-  margin: 0 auto 1rem;
   display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10rem;
+  margin-bottom: 1rem;
 }
 
 .testimonio-figure h5 {
@@ -189,10 +199,13 @@ footer {
 }
 
 img.estrella {
-  width: 9rem;
-  height: auto;
   display: block;
-  margin: 0.5rem auto 0;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 9rem;
+  margin-top: 0.5rem;
 }
 
 /* ------------------ */
@@ -214,8 +227,12 @@ img.estrella {
   align-content: center;
 }
 .tarjetaservicios img {
-  width: 300px;
+  display: block;
+  max-width: 100%;
   height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
   margin-bottom: 1rem;
   box-shadow: #deefff 0px 4px 8px 0px;
   border-radius: 10px;
@@ -253,8 +270,12 @@ img.estrella {
   margin: 6rem 0;
 }
 .imagenesgaleria img {
-  width: 330px;
+  display: block;
+  max-width: 100%;
   height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 330px;
   box-shadow: #deefff 0px 4px 8px 0px;
   border-radius: 10px;
 }
@@ -268,13 +289,13 @@ img.estrella {
   margin-bottom: 1rem;
 }
 
-.testimonio-galeria {
+.test-galeria {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 4rem;
 }
-
-.testimonio-mensaje {
+.test-galeria .test-mensaje {
   width: 600px;
   padding: 2rem;
   border-radius: 10px;
@@ -290,9 +311,12 @@ img.estrella {
   display: inline-block;
 }
 .testimonio-media img {
-  width: 600px;
-  height: auto;
   display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
   border-radius: 6px;
   border: 2px solid #bdd9e8;
 }
@@ -331,8 +355,12 @@ img.estrella {
   gap: 4rem;
 }
 .titulo-servicios img {
-  width: 600px;
+  display: block;
+  max-width: 100%;
   height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
   box-shadow: #deefff 0px 4px 8px 0px;
   border-radius: 3px;
 }
@@ -378,17 +406,18 @@ img.estrella {
   padding: 8rem 2rem;
   border-bottom: #e4e6ee 3px solid;
 }
-
 .servicios p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
   width: 700px;
 }
-
 .servicios img {
-  width: 100px;
-  height: auto;
   display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
 }
 
 /* ---------------------------------------------- */
@@ -401,83 +430,14 @@ img.estrella {
   justify-content: space-around;
   padding: 7rem 4rem;
 }
-
 .testimonios-servicios img {
-  width: 25px;
-  height: auto;
-  margin: 2rem;
-}
-
-/* ----------------------------- */
-/* Footer Agenda en Servicios */
-/* ----------------------------- */
-.agendarfooter-servicios {
-  background-color: #f9fafd;
-  align-content: center;
-  justify-content: center;
-  text-align: left;
-  padding: 6rem;
-}
-
-.agendar-form {
-  gap: 2rem;
-  margin: 4rem 0 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  font-size: 20px;
-}
-
-.agendar input[type=email] {
-  padding: 0.4rem 1rem;
-  width: 500px;
-  border: 2px solid #bcd3df;
-  border-radius: 9999px;
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.04);
-}
-
-/* ---------------------------------------------- */
-/* Servicios disponibles */
-/* ---------------------------------------------- */
-.servicios {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  flex-wrap: wrap;
-  background-color: #f9fafd;
-  padding: 8rem 2rem;
-  border-bottom: #e4e6ee 3px solid;
-}
-
-.servicios p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-  width: 700px;
-}
-
-.servicios img {
-  width: 100px;
-  height: auto;
   display: block;
-}
-
-/* ---------------------------------------------- */
-/* Testimonios Servicios */
-/* ---------------------------------------------- */
-.testimonios-servicios {
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 7rem 4rem;
-}
-
-.testimonios-servicios img {
-  width: 25px;
+  max-width: 100%;
   height: auto;
-  margin: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25px;
+  margin-bottom: 1rem;
 }
 
 /* ----------------------------- */
@@ -552,10 +512,11 @@ img.estrella {
   background-color: #dae5ea;
   font-size: 1.4rem;
 }
-
 .resumennosotros img {
-  width: 550px;
+  display: block;
+  max-width: 100%;
   height: auto;
+  width: 550px;
   border-radius: 4px;
   box-shadow: #bdd9e8 0px 4px 8px 0px;
 }
@@ -653,8 +614,12 @@ img.estrella {
 }
 
 .agendarhora-info img {
-  width: 500px;
+  display: block;
+  max-width: 100%;
   height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
   border-radius: 4px;
   box-shadow: #bdd9e8 0px 4px 8px 0px;
 }
@@ -680,8 +645,8 @@ img.estrella {
   justify-content: center;
   padding: 0 4rem 7rem;
   margin-bottom: 2rem;
+  text-align: center;
 }
-
 .reseñas-card div {
   max-width: 350px;
   margin: 2rem;
@@ -697,16 +662,18 @@ img.estrella {
   display: block;
   margin-top: 2rem;
 }
-
-.imgreseña blockquote {
+.imgreseña span blockquote {
   font-style: italic;
   display: block;
   font-size: 1.2rem;
 }
-
-.imgreseña img {
-  width: 350px;
+.imgreseña span .img {
+  display: block;
+  max-width: 100%;
   height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
   box-shadow: #bdd9e8 0px 4px 8px 0px;
   border-radius: 6px;
 }

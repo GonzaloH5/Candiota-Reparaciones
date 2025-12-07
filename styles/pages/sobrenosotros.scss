@@ -44,13 +44,13 @@
     justify-content: center;
     background-color: #dae5ea;
     font-size: 1.4rem;
-}
 
-.resumennosotros img {
-    width: 550px;
-    height: auto;
-    border-radius: 4px;
-    box-shadow: #bdd9e8 0px 4px 8px 0px;
+
+    img {
+        @include img-responsive($center: false, $width: 550px);
+        border-radius: 4px;
+        box-shadow: #bdd9e8 0px 4px 8px 0px;
+    }
 }
 
 .resumentitulo {

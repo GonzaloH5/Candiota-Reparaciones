@@ -46,9 +46,8 @@
 
 
     img {
-        width: 9rem;
-        height: auto;
-        margin: 0 auto 1rem;
+        @include img-responsive($center: true, $width: 9rem);
+        margin-bottom: 1rem;
     }
 
 }
@@ -57,16 +56,14 @@
 /* Testimonios */
 /* ----------------------------- */
 .testimonio {
-    @include center-content;
+    @extend %center-content;
     background-color: $primary-color;
     font-style: italic;
     padding: 5rem 0;
 
     img {
-        width: 10rem;
-        height: auto;
-        margin: 0 auto 1rem;
-        display: block;
+        @include img-responsive ($center: true, $width: 10rem);
+        margin-bottom: 1rem;
     }
 }
 
@@ -77,10 +74,8 @@
 }
 
 img.estrella {
-    width: 9rem;
-    height: auto;
-    display: block;
-    margin: 0.5rem auto 0;
+    @include img-responsive($center: true, $width: 9rem);
+    margin-top: 0.5rem;
 }
 
 /* ------------------ */
@@ -101,8 +96,7 @@ img.estrella {
     align-content: center;
 
     img {
-        width: 300px;
-        height: auto;
+        @include img-responsive($center: true, $width: 300px);
         margin-bottom: 1rem;
         box-shadow: #deefff 0px 4px 8px 0px;
         border-radius: 10px;
