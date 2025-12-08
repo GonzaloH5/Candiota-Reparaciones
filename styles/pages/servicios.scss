@@ -97,9 +97,7 @@
 
 .agendarfooter-servicios {
     background-color: $secondary-color;
-    align-content: center;
-    justify-content: center;
-    text-align: left;
+    @include center-content($align: left);
     padding: 6rem;
 }
 

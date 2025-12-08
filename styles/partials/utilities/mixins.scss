@@ -18,3 +18,9 @@
             width: $width;
         }
     }
+
+    @mixin center-content($justify: center, $align: center) {
+        justify-content: $justify;
+        align-items: $align;
+        text-align: center;
+    }
