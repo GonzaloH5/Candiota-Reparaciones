@@ -42,7 +42,7 @@
 .agendarhora-info img {
     @include img-responsive($center: true, $width: 500px);
     border-radius: 4px;
-    box-shadow: #bdd9e8 0px 4px 8px 0px;
+    box-shadow: $card-shadow;
 }
 
 .subtitulo-soporte {
@@ -52,7 +52,7 @@
     font-style: italic;
     font-weight: 400;
     letter-spacing: 2px;
-    box-shadow: #bdd9e8 4px 4px 8px 4px;
+    box-shadow: $card-shadow;
     padding: 1rem;
 }
 
@@ -74,7 +74,7 @@
         background-color: #eff2f4;
         padding: 3rem;
         border-radius: 6px;
-        box-shadow: #bdd9e8 0px 4px 8px 0px;
+        box-shadow: $card-shadow;
     }
 }
 
@@ -93,7 +93,7 @@
 
     .img {
         @include img-responsive($center: true, $width: 350px);
-        box-shadow: #bdd9e8 0px 4px 8px 0px;
+        box-shadow: $card-shadow;
         border-radius: 6px;
     }
 }

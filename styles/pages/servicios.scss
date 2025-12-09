@@ -10,7 +10,7 @@
 
     img {
         @include img-responsive($center: false, $width: 600px);
-        box-shadow: #deefff 0px 4px 8px 0px;
+        box-shadow: $card-shadow;
         border-radius: 3px;
     }
 }

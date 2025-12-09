@@ -27,7 +27,7 @@
 
     img {
         @include img-responsive($center: true, $width: 330px);
-        box-shadow: #deefff 0px 4px 8px 0px;
+        box-shadow: $card-shadow;
         border-radius: 10px;
     }
 
