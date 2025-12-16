@@ -1,23 +1,23 @@
 // UTILITIES
-@import './partials/utilities/variables';
-@import './partials/utilities/mixins';
-@import './partials/utilities/extends';
-@import './partials/utilities/utils';
+@use './partials/utilities/variables' as *;
+@use './partials/utilities/mixins' as *;
+@use './partials/utilities/extends' as *;
+@use './partials/utilities/utils' as *;
 
 // BASE
-@import './partials/base/base';
-@import './partials/base/reset';
-@import './partials/base/tipografia';
-@import './partials/base/layout';
+@use './partials/base/base' as *;
+@use './partials/base/reset' as *;
+@use './partials/base/tipografia' as *;
+@use './partials/base/layout' as *;
 
 // COMPONENTS
-@import './partials/components/navbar';
-@import './partials/components/footer';
-@import './partials/components/components';
+@use './partials/components/navbar' as *;
+@use './partials/components/footer' as *;
+@use './partials/components/components' as *;
 
 // PAGES
-@import 'pages/inicio';
-@import 'pages/galeria';
-@import 'pages/servicios';
-@import 'pages/sobrenosotros';
-@import 'pages/soporte';
+@use 'pages/inicio' as *;
+@use 'pages/galeria' as *;
+@use 'pages/servicios' as *;
+@use 'pages/sobrenosotros' as *;
+@use 'pages/soporte' as *;

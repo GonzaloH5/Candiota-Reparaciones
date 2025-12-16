@@ -16,7 +16,7 @@
 
 .sections-grid-sobre {
     display: grid;
-    grid-template-rows: 0.5fr 2fr 1fr;
+    grid-template-rows: 0.5fr (150px, 1fr) auto;
     gap: 0;
     height: 100%;
 }

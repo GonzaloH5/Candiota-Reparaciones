@@ -1,3 +1,5 @@
+@use '../utilities/variables' as *;
+
 .navbar-site {
     background: $navbar-color;
 }
@@ -6,4 +8,10 @@ ul {
     display: flex;
     gap: 2rem;
     list-style: none;
+}
+
+.navbar-toggler {
+    border: 2px solid #333;
+    border-radius: 6px;
+    padding: 0.4rem 0.6rem;
 }
