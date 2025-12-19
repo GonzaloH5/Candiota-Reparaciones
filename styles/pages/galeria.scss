@@ -98,3 +98,90 @@
 .blockquote-right {
     transform: translateX(90%);
 }
+
+/* ----------------------------- */
+/* Responsive - Galeria */
+/* ----------------------------- */
+
+@media (max-width: 992px) {
+
+    .imagenesgaleria {
+        gap: 1.5rem;
+        margin: 4rem 1rem;
+    }
+
+    .test-galeria {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0 2rem;
+        align-items: center;
+
+        .test-mensaje {
+            text-align: center;
+        }
+    }
+
+    .testimonio-media {
+        width: 100%;
+
+        blockquote {
+            position: relative;
+            bottom: auto;
+            margin: 1rem auto;
+            max-width: 400px;
+            font-size: 16px;
+        }
+    }
+
+    .blockquote-left,
+    .blockquote-right {
+        transform: none;
+        left: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .titulo-galeria {
+        h1 {
+            margin: 3rem 0;
+            font-size: 2.5rem;
+            letter-spacing: 3px;
+        }
+    }
+
+    .imagenesgaleria {
+        margin: 2rem 0.5rem;
+
+        img {
+            width: 80%;
+            max-width: 300px;
+        }
+    }
+
+    .test-galeria {
+        .test-mensaje {
+            padding: 1rem 0.5rem;
+
+            h3 {
+                font-size: 1.2rem;
+            }
+
+            p {
+                font-size: 0.95rem;
+            }
+        }
+    }
+
+    .servicios-footer {
+        padding: 4rem 1rem;
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+            padding: 0 0.5rem;
+        }
+    }
+}
