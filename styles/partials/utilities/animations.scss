@@ -1,0 +1,46 @@
+/* Animaciones sutiles */
+
+@mixin hover-lift($distance: -5px, $shadow: true) {
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+
+    &:hover {
+        transform: translateY($distance);
+
+        @if $shadow {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+    }
+}
+
+@mixin hover-scale($scale: 1.05) {
+    transition: transform 0.3s ease-out;
+
+    &:hover {
+        transform: scale($scale);
+    }
+}
+
+@mixin hover-glow {
+    transition: box-shadow 0.3s ease;
+
+    &:hover {
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    }
+}
+
+/* Animación de entrada suave */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+}

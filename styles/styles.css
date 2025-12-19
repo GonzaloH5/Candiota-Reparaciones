@@ -17,6 +17,22 @@
   font-weight: 700;
 }
 
+/* Animaciones sutiles */
+/* Animación de entrada suave */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -118,6 +134,16 @@ ul {
   padding: 0.4rem 0.6rem;
 }
 
+.nav-link {
+  transition: transform 0.3s ease-out;
+}
+.nav-link:hover {
+  transform: scale(1.1);
+}
+.nav-link {
+  display: inline-block;
+}
+
 footer {
   background-color: #e8eef1;
   padding: 2rem;
@@ -200,6 +226,11 @@ footer {
   padding: 1rem;
   text-align: center;
   width: 300px;
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+.beneficio:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 .beneficio img {
   display: block;
@@ -264,6 +295,11 @@ img.estrella {
   text-align: center;
   padding: 2rem;
   max-width: 400px;
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+.tarjetaservicios:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 .tarjetaservicios img {
   display: block;
@@ -297,15 +333,7 @@ img.estrella {
 /* ----------------------------- */
 @media (max-width: 992px) {
   .tituloprincipal {
-    padding: 3rem 2rem;
-    text-align: center;
-  }
-  .tituloprincipal h1 {
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-  }
-  .tituloprincipal h2 {
-    font-size: 1.3rem;
+    padding: 10rem 2rem;
   }
   .beneficios h2 {
     font-size: 2.5rem;
@@ -330,66 +358,7 @@ img.estrella {
     font-size: 2rem;
   }
 }
-@media (max-width: 768px) {
-  .sections-grid-inicio {
-    grid-template-rows: auto auto auto auto auto;
-  }
-  .sections-grid-inicio > * {
-    min-height: 0;
-  }
-  .tituloprincipal {
-    padding: 2rem 1rem;
-  }
-  .tituloprincipal h1 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-  }
-  .tituloprincipal h2 {
-    font-size: 1.1rem;
-  }
-  .beneficios {
-    padding: 2rem 1rem;
-  }
-  .beneficios h2 {
-    font-size: 2rem;
-    margin: 2rem 0;
-  }
-  .beneficio {
-    width: 45%;
-    min-width: 140px;
-    padding: 0.75rem;
-  }
-  .beneficio img {
-    width: 5rem;
-  }
-  .testimonio {
-    padding: 3rem 1rem;
-  }
-  .tarjetaservicios {
-    padding: 1rem;
-  }
-  .tarjetaservicios img {
-    width: 100%;
-    max-width: 280px;
-  }
-  .servicios-footer {
-    padding: 2rem 1rem;
-  }
-  .servicios-footer h2 {
-    font-size: 1.5rem;
-  }
-  .servicios-footer p {
-    font-size: 1rem;
-  }
-}
 @media (max-width: 576px) {
-  .tituloprincipal h1 {
-    font-size: 1.75rem;
-    margin-bottom: 1.5rem;
-  }
-  .tituloprincipal h2 {
-    font-size: 1rem;
-  }
   .beneficios h2 {
     font-size: 1.5rem;
   }
@@ -435,6 +404,11 @@ img.estrella {
   width: 330px;
   box-shadow: 0px 4px 8px 0px #deefff;
   border-radius: 10px;
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+.imagenesgaleria img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* ----------------------------- */
@@ -584,6 +558,11 @@ img.estrella {
   width: 600px;
   box-shadow: 0px 4px 8px 0px #deefff;
   border-radius: 3px;
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+.titulo-servicios img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .encabezado-servicios {
@@ -639,6 +618,10 @@ img.estrella {
   margin-left: auto;
   margin-right: auto;
   width: 100px;
+  transition: transform 0.3s ease-out;
+}
+.servicios img:hover {
+  transform: scale(1.05);
 }
 
 /* ---------------------------------------------- */
@@ -800,6 +783,10 @@ img.estrella {
   width: 550px;
   border-radius: 4px;
   box-shadow: 0px 4px 8px 0px #deefff;
+  transition: transform 0.3s ease-out;
+}
+.resumennosotros img:hover {
+  transform: scale(1.05);
 }
 
 .resumentitulo {
@@ -856,6 +843,11 @@ img.estrella {
   margin: 1rem 0;
   border-radius: 5px;
   border: 3px solid #e8e3e3;
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+.tarjeta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* ----------------------------- */
@@ -974,6 +966,10 @@ img.estrella {
   width: 500px;
   border-radius: 4px;
   box-shadow: 0px 4px 8px 0px #deefff;
+  transition: transform 0.3s ease-out;
+}
+.agendarhora-info img:hover {
+  transform: scale(1.05);
 }
 
 .subtitulo-soporte {

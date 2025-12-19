@@ -1,6 +1,7 @@
 @use '../partials/utilities/variables' as *;
 @use '../partials/utilities/mixins' as *;
 @use '../partials/utilities/extends' as *;
+@use '../partials/utilities/animations' as *;
 
 /* -------------------------- */
 /* INICIO DE SOPORTE */
@@ -47,6 +48,7 @@
     @include img-responsive($center: true, $width: 500px);
     border-radius: 4px;
     box-shadow: $card-shadow;
+    @include hover-scale;
 }
 
 .subtitulo-soporte {

@@ -1,6 +1,7 @@
 @use '../partials/utilities/variables' as *;
 @use '../partials/utilities/mixins' as *;
 @use '../partials/utilities/extends' as *;
+@use '../partials/utilities/animations' as *;
 
 /* -------------------------- */
 /* MENU INICIO */
@@ -47,6 +48,7 @@
     padding: 1rem;
     text-align: center;
     width: 300px;
+    @include hover-lift;
 
 
     img {
@@ -98,6 +100,7 @@ img.estrella {
     @include center-content;
     padding: 2rem;
     max-width: 400px;
+    @include hover-lift;
 
     img {
         @include img-responsive($center: true, $width: 300px);
@@ -130,18 +133,9 @@ img.estrella {
 /* ----------------------------- */
 
 @media (max-width: 992px) {
+
     .tituloprincipal {
-        padding: 3rem 2rem;
-        text-align: center;
-
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 3rem;
-        }
-
-        h2 {
-            font-size: 1.3rem;
-        }
+        padding: 10rem 2rem;
     }
 
     .beneficios h2 {
@@ -174,85 +168,8 @@ img.estrella {
     }
 }
 
-@media (max-width: 768px) {
-    .sections-grid-inicio {
-        grid-template-rows: auto auto auto auto auto;
-    }
-
-    .sections-grid-inicio>* {
-        min-height: 0;
-    }
-
-    .tituloprincipal {
-        padding: 2rem 1rem;
-
-        h1 {
-            font-size: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        h2 {
-            font-size: 1.1rem;
-        }
-    }
-
-    .beneficios {
-        padding: 2rem 1rem;
-
-        h2 {
-            font-size: 2rem;
-            margin: 2rem 0;
-        }
-    }
-
-    .beneficio {
-        width: 45%;
-        min-width: 140px;
-        padding: 0.75rem;
-
-        img {
-            width: 5rem;
-        }
-    }
-
-    .testimonio {
-        padding: 3rem 1rem;
-    }
-
-    .tarjetaservicios {
-        padding: 1rem;
-
-        img {
-            width: 100%;
-            max-width: 280px;
-        }
-    }
-
-    .servicios-footer {
-        padding: 2rem 1rem;
-
-        h2 {
-            font-size: 1.5rem;
-        }
-
-        p {
-            font-size: 1rem;
-        }
-    }
-}
 
 @media (max-width: 576px) {
-    .tituloprincipal {
-        h1 {
-            font-size: 1.75rem;
-            margin-bottom: 1.5rem;
-        }
-
-        h2 {
-            font-size: 1rem;
-        }
-    }
-
     .beneficios h2 {
         font-size: 1.5rem;
     }

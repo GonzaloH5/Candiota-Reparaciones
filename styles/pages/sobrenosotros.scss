@@ -1,6 +1,7 @@
 @use '../partials/utilities/variables' as *;
 @use '../partials/utilities/mixins' as *;
 @use '../partials/utilities/extends' as *;
+@use '../partials/utilities/animations' as *;
 
 /* ---------------------------- */
 /* SOBRE NOSOTROS */
@@ -54,6 +55,7 @@
         @include img-responsive($center: false, $width: 550px);
         border-radius: 4px;
         box-shadow: $card-shadow;
+        @include hover-scale;
     }
 }
 
@@ -107,6 +109,7 @@
     margin: 1rem 0;
     border-radius: 5px;
     border: 3px solid #e8e3e3;
+    @include hover-lift;
 
 }
 
